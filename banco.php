@@ -31,7 +31,7 @@
 
     function criarConta($cadastroConta, $conexao) {
         $sqlCriarConta = "
-            INSERT INTO agencias
+            INSERT INTO contas
             (numero_agencia, nome_completo, cpf, saldo, cidade, estado, bairro, logradouro, complemento)
             VALUES
             (
