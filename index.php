@@ -38,17 +38,17 @@
 
     <?php
         if($escolha == "criarAgencia") {
-            include('criar-agencia.php');
+            include('escolhas/criar-agencia.php');
         } else if($escolha == "criarConta") {
-            include('criar-conta.php');
+            include('escolhas/criar-conta.php');
         } else if($escolha == "deposito") {
-            include('criar-conta.php');
+            include('escolhas/deposito.php');
         } else if($escolha == "transferencia") {
-            include('criar-conta.php');
+            include('escolhas/transferencia.php');
         } else if($escolha == "listarContas") {
-            include('criar-conta.php');
+            include('escolhas/listar-contas.php');
         } else if($escolha == "pesquisar") {
-            include('criar-conta.php');
+            include('escolhas/pesquisar.php');
         }
     ?>
 </body>
