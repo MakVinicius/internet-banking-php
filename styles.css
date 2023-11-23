@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.funcionalidades {
+    display: flex;
+    flex: 1;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.funcionalidades div {
+    margin: 20px;
+    background-color: blueviolet;
+}
+
+.funcionalidades a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+}
