@@ -12,6 +12,11 @@
             <input type="number" name="cpf" required />
         </div>
 
+        <div>
+            <label for="numero-agencia">Número Agência</label>
+            <input type="text" name="numero-agencia" required />
+        </div>
+
         <div class="endereco">
             <h1>Informações sobre o seu endereço</h1>
 
@@ -42,5 +47,7 @@
         </div>
 
         <button type="submit">Enviar</button>
+
+        <input type="hidden" name="escolha" value="criarConta" />
     </fieldset>
 </form>

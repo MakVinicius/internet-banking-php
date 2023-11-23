@@ -42,5 +42,7 @@
         </div>
 
         <button type="submit">Enviar</button>
+
+        <input type="hidden" name="escolha" value="criarAgencia" />
     </fieldset>
 </form>
