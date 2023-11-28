@@ -1,3 +1,11 @@
+<?php
+    // $directory = dirname(__DIR__);
+    // include($directory . '\banco.php');
+
+    $numeroAgencia = buscarAgencia($conexao);
+?>
+
+
 <form action="index.php" method="post">
     <fieldset>
         <legend>Abertura de conta corrente</legend>
@@ -14,7 +22,8 @@
 
         <div>
             <label for="numero-agencia">Número Agência</label>
-            <input type="text" name="numero-agencia" required />
+            <input type="text" name="numero-agencia" value="<?php echo $numeroAgencia[1]['numero_agencia']; ?>" disabled />
+            <input type="hidden" name="numero-agencia" value="<?php echo $numeroAgencia[1]['numero_agencia']; ?>" />
         </div>
 
         <div class="endereco">

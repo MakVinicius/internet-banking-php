@@ -10,6 +10,18 @@
         die();
     }
 
+    function buscarAgencia($conexao) {
+        $sqlBusca = 'SELECT numero_agencia FROM agencias;';
+        $resultado = mysqli_query($conexao, $sqlBusca);
+        $numeros[] = array();
+
+        while ($numeroAgencia = mysqli_fetch_assoc($resultado)) {
+            $numeros[] = $numeroAgencia;
+        }
+
+        return $numeros;
+    }
+
     function criarAgencia($cadastroAgencia, $conexao) {
         $sqlCriarAgencia = "
             INSERT INTO agencias
