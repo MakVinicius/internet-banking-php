@@ -10,6 +10,18 @@
         die();
     }
 
+    function todasContas($conexao) {
+        $sqlBusca = 'SELECT * FROM contas';
+        $resultado = mysqli_query($conexao, $sqlBusca);
+        $contas = array();
+        
+        while ($conta = mysqli_fetch_assoc($resultado)) {
+            $contas[] = $conta;
+        }
+        
+        return $contas;
+    }
+
     function buscarAgencia($conexao) {
         $sqlBusca = 'SELECT numero_agencia FROM agencias;';
         $resultado = mysqli_query($conexao, $sqlBusca);

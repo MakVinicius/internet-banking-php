@@ -2,6 +2,7 @@
     include('banco.php');
 
     $escolha = "";
+    $exibir_tabela = true;
 
     $agencia = buscarAgencia($conexao);
     if (!isset($agencia[1])) {

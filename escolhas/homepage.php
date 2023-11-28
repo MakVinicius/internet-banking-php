@@ -24,6 +24,10 @@
             </label>
         </div>
 
+        <?php if ($exibir_tabela) : ?>
+            <?php include('tabela.php'); ?>
+        <?php endif; ?>
+
         <button type="submit">Enviar</button>
     </fieldset>
 </form>
