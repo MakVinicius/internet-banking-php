@@ -1,36 +1,28 @@
 <table>
     <tr>
-        <th>Número Conta</th>
-        <th>Descrição</th>
-        <th>Prazo</th>
-        <th>Prioridade</th>
-        <th>Concluída</th>
+        <th>Número da Conta</th>
+        <th>Nome Completo</th>
+        <th>CPF</th>
+        <th>Saldo</th>
+        <th>Cidade</th>
         <th>Opções</th>
     </tr>
-    <?php foreach ($lista_tarefas as $tarefa) : ?>
+    <?php foreach ($lista_contas as $conta) : ?>
         <tr>
             <td>
-                <?php echo $tarefa['nome']; ?>
+                <?php echo $conta['numero_conta']; ?>
             </td>
             <td>
-                <?php echo $tarefa['descricao']; ?>
+                <?php echo $conta['nome_completo']; ?>
             </td>
             <td>
-                <?php echo traduz_data_para_exibir($tarefa['prazo']); ?>
+                <?php echo $conta['cpf']; ?>
+            </td>          
+            <td>
+                <?php echo $conta['saldo']; ?>
             </td>
             <td>
-                <?php echo traduz_prioridade($tarefa['prioridade']); ?>
-            </td>
-            <td>
-                <?php echo traduz_concluida($tarefa['concluida']); ?>
-            </td>
-            <td>
-                <a href="editar.php?id=<?php echo $tarefa['id']; ?>">
-                    Editar
-                </a>
-                <a href="remover.php?id=<?php echo $tarefa['id']; ?>">
-                    Remover
-                </a>
+                <?php echo $conta['cidade']; ?>
             </td>
         </tr>
     <?php endforeach; ?>

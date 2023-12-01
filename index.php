@@ -58,8 +58,6 @@
     <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
 <body>
-    <h1>Bem Vindo ao Gerenciador de Bancos</h1>
-
     <?php
         if($escolha == "criarAgencia") {
             include('escolhas/criar-agencia.php');
@@ -69,13 +67,19 @@
             include('escolhas/deposito.php');
         } else if($escolha == "transferencia") {
             include('escolhas/transferencia.php');
-        } else if($escolha == "listarContas") {
-            include('escolhas/listar-contas.php');
         } else if($escolha == "pesquisar") {
             include('escolhas/pesquisar.php');
         } else {
             include('escolhas/homepage.php');
         }
+        $lista_contas = todasContas($conexao);
+        $contas = array(
+            'numero_conta' => '',
+            'nome_completo' => '',
+            'cpf' => '',
+            'saldo' => '',
+            'estado' => ''
+        );
     ?>
 </body>
 </html>
