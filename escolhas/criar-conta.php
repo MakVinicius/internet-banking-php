@@ -6,9 +6,9 @@
 ?>
 
 
-<form action="index.php" method="post">
-    <fieldset>
-        <legend>Abertura de conta corrente</legend>
+<form action="index.php" method="post" class="cadastroAgencia">
+    <fieldset class="campoCriarAgencia">
+        <legend class="legendaCriarAgencia">Abertura de conta corrente</legend>
 
         <div>
             <label for="nome-completo">Nome Completo do Titular</label>

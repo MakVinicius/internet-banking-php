@@ -1,6 +1,6 @@
-<form action="index.php" method="post">
-    <fieldset>
-        <legend>Cadastro de Agências</legend>
+<form action="index.php" method="post" class="cadastroAgencia">
+    <fieldset class="campoCriarAgencia">
+        <legend class="legendaCriarAgencia">Cadastro de Agência</legend>
 
         <div>
             <label for="nome-banco">Nome do banco</label>
@@ -13,7 +13,7 @@
         </div>
 
         <div class="endereco">
-            <h1>Informações sobre o seu endereço</h1>
+            <h3 class="tituloEndereco">Informações sobre o seu endereço</h1>
 
             <div>
                 <label for="cidade">Cidade</label>

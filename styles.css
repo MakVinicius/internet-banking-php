@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mensagemRetorno {
+    color: black;
+}
+
+/* 
+    Código do Cadastro de Agências
+
+*/
+.cadastroAgencia {
+    width: 70%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.campoCriarAgencia {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.legendaCriarAgencia {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cadastroAgencia div {
+    margin-bottom: 15px;
+}
+
+.cadastroAgencia label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cadastroAgencia input[type="text"],
+.cadastroAgencia input[type="number"],
+.cadastroAgencia input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.cadastroAgencia button[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.endereco {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.tituloEndereco {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* 
+    Código da homepage com as opções pra selecionar
+
+*/
+
+.form-options {
+    margin: 120px auto 0px auto;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.corpoOpcoes {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legendaOpcoes {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-options button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-options button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* 
+    Código da tabela da homepage de exibição de contas
+
+*/
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for options column (assuming links/buttons) */
+td:last-child button {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+td:last-child button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/*
+    Código CSS do Campo de Pesquisa
+
+*/
+
+.form_pesquisar {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.corpoPesquisar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form_pesquisar label {
+    margin: 15px;
+}
+
+.form_pesquisar input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form_pesquisar button[type="submit"] {
+    padding: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form_pesquisar button[type="submit"]:hover {
+    background-color: #0056b3;
+}
