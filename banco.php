@@ -51,6 +51,11 @@
         ";
 
         mysqli_query($conexao, $sqlCriarAgencia);
+        // $agencias = buscarAgencia($conexao);
+
+        // $mensagem = "Agência n° {$agencias[1]} criada";
+
+        // return $mensagem;
     }
 
     function criarConta($cadastroConta, $conexao) {
@@ -72,6 +77,17 @@
         ";
 
         mysqli_query($conexao, $sqlCriarConta);
+
+        // $sqlUltimaConta = "
+        //     SELECT numero_conta FROM agencias
+        //     ORDER BY numero_conta DESC
+        //     LIMIT 1;        
+        // ";
+        // $resultado = mysqli_query($conexao, $sqlUltimaConta);
+        // $dadosConta = mysqli_fetch_assoc($resultado);
+
+        // $mensagem = "Conta n° {$dadosConta['numero_agencia']} criada";
+        // return $mensagem;
     }
 
     function contaExiste($numeroConta, $conexao) {

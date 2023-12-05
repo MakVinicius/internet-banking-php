@@ -5,9 +5,9 @@
     $numeroAgencia = buscarAgencia($conexao);
 ?>
 
-<form action="index.php" method="post">
-    <fieldset>
-        <legend>Realizar Saque</legend>
+<form action="index.php" method="post" class="cadastroAgencia">
+    <fieldset class="campoCriarAgencia">
+        <legend class="legendaCriarAgencia">Realizar Saque</legend>
 
         <div>
             <label for="numero-agencia">Número Agência</label>

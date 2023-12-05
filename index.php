@@ -45,8 +45,8 @@
         criarAgencia($cadastroAgencia, $conexao);
         $escolha = "";
 
-        header('Location: index.php');
-        die();
+        //header('Location: index.php');
+        // die();
     }
 
     if ($escolha == 'criarConta' && isset($_POST['cpf'])) {
@@ -66,8 +66,10 @@
         $escolha = ""; // precisa zerar a escolha para entrar na opção correta que é o else
         $cadastroConta = array(); // precisa zerar o array para não enviar a mesma informação do cadastro anterior
 
-        header('Location: index.php');
-        die();
+        $lista_contas = todasContas($conexao);
+
+        //header('Location: index.php');
+        // die();
     }
 
     if ($escolha == "deposito" && isset($_POST['numero-conta']) && isset($_POST['valor_deposito'])) {
@@ -78,11 +80,14 @@
         $mensagem = deposito($numeroConta, $valorDeposito, $conexao);
         $escolha = ""; // precisa zerar a escolha para entrar na opção correta que é o else
         $valorDeposito = array(); // precisa zerar o array para não enviar a mesma informação do cadastro anterior
+
+        $lista_contas = todasContas($conexao);
         
-        if ($valorDeposito > 0) {
-            header('Location: index.php');
-            die();
-        }
+        // if ($valorDeposito > 0) {
+        //     header('Location: index.php');
+        //     die();
+        // }
+        //header('Location: index.php');
     }
 
     if ($escolha == "saque" && isset($_POST['numero-conta']) && isset($_POST['valor_saque'])) {
@@ -94,7 +99,9 @@
         $escolha = ""; // precisa zerar a escolha para entrar na opção correta que é o else
         $valorSaque = array(); // precisa zerar o array para não enviar a mesma informação do cadastro anterior
 
-        // header('Location: index.php');
+        $lista_contas = todasContas($conexao);
+
+        //header('Location: index.php');
         // die();
     }
 
@@ -109,12 +116,16 @@
         $escolha = ""; // Precisa zerar a escolha para entrar na opção correta que é o else
         $valorTransferencia = array(); // Precisa zerar o array para não enviar a mesma informação do cadastro anterior
 
+        $lista_contas = todasContas($conexao);
+
         // header('Location: index.php');
         // die();
     }
 
     if ($escolha == "deletar" && isset($_GET['numeroConta'])) {
         deletarConta($_GET['numeroConta'], $conexao);
+
+        $lista_contas = todasContas($conexao);
     }
 ?>
 
