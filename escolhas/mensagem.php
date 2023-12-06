@@ -1,5 +1,4 @@
-<div class="mensagemRetorno" style="border: 4px solid <?php echo $mensagem != null ? 'blue' : 'white';?>; background-color: <?php echo $mensagem != null ? '#d5d90b' : 'white';?>;">
-    <h3>
-        <?php echo $mensagem; ?>
-    </h3>
+<div class="banner">
+    <h1>Banco Garantia</h1>
+    <p>O banco confiável para todas as suas necessidades financeiras!</p>
 </div>
