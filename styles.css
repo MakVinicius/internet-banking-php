@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+
+/* Estilos da Div do Banner */
+.banner {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.banner p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
 .mensagemRetorno {
     display: flex;
     justify-content: center;

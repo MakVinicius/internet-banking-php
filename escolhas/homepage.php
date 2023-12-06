@@ -1,8 +1,3 @@
-<?php        
-
-    
-?>
-
 <form action="index.php" method="get" class="form-options">
     <fieldset class="corpoOpcoes">
         <legend class="legendaOpcoes">Escolha a Operação Desejada</legend>

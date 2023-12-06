@@ -22,13 +22,6 @@
         $lista_contas = pesquisarPeloCPF($_GET['cpf'], $conexao);
     } else {
         $lista_contas = todasContas($conexao);
-        // $contas = array(
-        //     'numero_conta' => '',
-        //     'nome_completo' => '',
-        //     'cpf' => '',
-        //     'saldo' => '',
-        //     'estado' => ''
-        // );
     }
 
     if ($escolha == 'criarAgencia' && isset($_POST['nome-banco'])) {
@@ -45,8 +38,8 @@
         criarAgencia($cadastroAgencia, $conexao);
         $escolha = "";
 
-        //header('Location: index.php');
-        // die();
+        header('Location: index.php');
+        die();
     }
 
     if ($escolha == 'criarConta' && isset($_POST['cpf'])) {
@@ -68,8 +61,8 @@
 
         $lista_contas = todasContas($conexao);
 
-        //header('Location: index.php');
-        // die();
+        header('Location: index.php');
+        die();
     }
 
     if ($escolha == "deposito" && isset($_POST['numero-conta']) && isset($_POST['valor_deposito'])) {
@@ -83,11 +76,8 @@
 
         $lista_contas = todasContas($conexao);
         
-        // if ($valorDeposito > 0) {
-        //     header('Location: index.php');
-        //     die();
-        // }
-        //header('Location: index.php');
+        header('Location: index.php');
+        die();
     }
 
     if ($escolha == "saque" && isset($_POST['numero-conta']) && isset($_POST['valor_saque'])) {
@@ -101,8 +91,8 @@
 
         $lista_contas = todasContas($conexao);
 
-        //header('Location: index.php');
-        // die();
+        header('Location: index.php');
+        die();
     }
 
     if ($escolha == "transferencia" && isset($_POST['numero-conta-origem']) && isset($_POST['numero-conta-destino']) && isset($_POST['valor_transferencia'])) {
@@ -118,13 +108,12 @@
 
         $lista_contas = todasContas($conexao);
 
-        // header('Location: index.php');
-        // die();
+        header('Location: index.php');
+        die();
     }
 
     if ($escolha == "deletar" && isset($_GET['numeroConta'])) {
         deletarConta($_GET['numeroConta'], $conexao);
-
         $lista_contas = todasContas($conexao);
     }
 ?>
@@ -154,15 +143,7 @@
         } else {
             include('escolhas/homepage.php');
         }
-
-        $lista_contas = todasContas($conexao);
-        $contas = array(
-            'numero_conta' => '',
-            'nome_completo' => '',
-            'cpf' => '',
-            'saldo' => '',
-            'estado' => ''
-        );
+        
     ?>
 </body>
 </html>

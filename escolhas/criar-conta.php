@@ -1,7 +1,4 @@
 <?php
-    // $directory = dirname(__DIR__);
-    // include($directory . '\banco.php');
-
     $numeroAgencia = buscarAgencia($conexao);
 ?>
 
